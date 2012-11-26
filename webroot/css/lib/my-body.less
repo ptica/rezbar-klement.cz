@@ -7,7 +7,8 @@ body {
 	color: @grayDark;
 	background-color: #111;
 	margin: 0;
-	#font > .sans-serif(normal,@basefont,@baseline);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
 }
 
 // Container (centered, fixed-width layouts)
@@ -34,7 +35,5 @@ body {
 .container, .container-fluid {
 	background: gray url(../img/container-bg.png) repeat;
 	-webkit-border-radius: 7px;
-	-webkit-box-shadow:
-		inset  0px -50px 225px -100px #9E8D11,
-		inset  0px 70px 225px -100px #9E8D11;
+	-webkit-box-shadow: inset  0px -50px 225px -100px #9E8D11, inset  0px 70px 225px -100px #9E8D11;
 }

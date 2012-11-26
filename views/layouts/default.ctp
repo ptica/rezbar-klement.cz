@@ -50,7 +50,7 @@
 		}
 	?>
 	<?php echo $html->css('print.css', 'stylesheet', array('media'=>'print'))."\n" ?>
-	<link href='http://fonts.googleapis.com/css?family=Miss+Fajardose|Great+Vibes|Ruthie&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!--link href='http://fonts.googleapis.com/css?family=Miss+Fajardose|Great+Vibes|Ruthie&subset=latin,latin-ext' rel='stylesheet' type='text/css'-->
 	
 	<!--[if IE 5]>
 		<style type="text/css" media="screen, projection">
@@ -90,21 +90,29 @@
 				<li><a href="/">HOME</a></li>
 				<li class=""><a href="odkazy">ODKAZY</a></li>
 				<li class=""><a href="ohlasy">OHLASY</a></li>
-				<li class=""><a href="kontakt">KONTAKT</a></li>
+				<li class=""><a href="nastroje">NÁSTROJE</a></li>
 				<li class=""><a href="partneri">REALIZACE</a></li>
 				<li class=""><a href="kontakt">KONTAKT</a></li>
 			</ul>
 		</nav>
 		<?php echo $this->Html->image('../css/img/ozdobrana.png', array('class'=>'ozdobrana')) ?>
-		<a id="klement" href="<?php echo Router::url('/')?>">Rezbár Klement</a>
+		<a id="klement" href="<?php echo Router::url('/')?>">Řezbář Klement</a>
 		<!--form id="header-search" action="/search" method="get">
 				<span>Hledat:</span>
 				<input type="text" name="q" />
 		</form-->
 	</header>
 	
-	<footer class="intro" style="height:250px">
+	<footer class="intro">
+		<!--img src="/css/img/gregor-dum.jpg" width="745px" height="130%" style="overflow:hidden"-->
 	</footer>
+	
+	<div style="margin-left:32px; float: left; width:350px; margin-bottom:52px;">
+	Hola hola hola hej
+	</div>
+	<div style="margin-left:32px; float: left; width:350px">
+	Hola hola hola hej
+	</div>
 	
 	<?php echo $this->Html->image('../css/img/andelicci.png', array('class'=>'andelicci')) ?>
 	

@@ -24,10 +24,15 @@
 			a {
 				color: #404040;
 				text-decoration: none;
+				border-bottom: 4px solid transparent;
+				-webkit-transition-property: color, border;
+				-webkit-transition-duration: 100ms, 100ms;
 			}
 			a:hover, a:active {
 				color: #A60C00;
-				border-bottom: 6px solid #A60C00;
+				border-bottom: 4px solid #A60C00;
+				-webkit-transition-property: color, border;
+				-webkit-transition-duration: 300ms, 600ms;
 			}
 			padding-left: 36px;
 		}
@@ -50,7 +55,8 @@
 }
 
 #klement {
-	font-family: 'Miss Fajardose', cursive;
+	font-family: miss_fajardoseregular;
+	//font-family: 'Miss Fajardose', cursive;
 	//font-family: 'Great Vibes', cursive;
 	//font-family: 'Ruthie', cursive;
 	font-size: 125px;
@@ -59,7 +65,7 @@
 	color: #45170d;
 	color: #A60C00;
 	line-height: 200px;
-	margin-top: 150px;
+	margin-top: 175px;
 	margin-left: -25px;
 	text-shadow: 0px 3px 0px #888;
 }
