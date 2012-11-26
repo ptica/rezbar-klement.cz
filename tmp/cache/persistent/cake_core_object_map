@@ -1,2 +1,2 @@
-1330690263
-a:4:{s:6:"plugin";a:0:{}s:45:"fileUsersptaceksrccake_1.3.myappvendorsshells";a:0:{}s:42:"fileUsersptaceksrccake_1.3.myvendorsshells";a:0:{}s:44:"fileUsersptaceksrccake_1.3.mycakeconsolelibs";a:8:{i:0;s:7:"acl.php";i:1;s:7:"api.php";i:2;s:8:"bake.php";i:3;s:11:"console.php";i:4;s:8:"i18n.php";i:5;s:10:"schema.php";i:6;s:9:"shell.php";i:7;s:13:"testsuite.php";}}
+1353665289
+a:1:{s:6:"plugin";a:6:{i:0;s:6:"Deploy";i:1;s:11:"Datasources";i:2;s:5:"Gopay";i:3;s:10:"JsValidate";i:4;s:22:"Master-slave-read-safe";i:5;s:11:"Permissions";}}

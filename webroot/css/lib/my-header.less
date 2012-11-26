@@ -1,0 +1,209 @@
+#header {
+	position: relative;
+	display: block;
+	.clearfix();
+	
+	> nav.menu {
+		display: block;
+		float: left;
+		width: 100%;
+		margin-bottom: 14px;
+		margin-top: 15px;
+		margin-left: 10px;
+		background: transparent url(../img/menu-bg.png) no-repeat;
+		ul {
+			list-style-type: none;
+			height: 52px;
+			margin: 0;
+		}
+		li {
+			float: left;
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			line-height: 50px;
+			a {
+				color: #404040;
+				text-decoration: none;
+			}
+			a:hover, a:active {
+				color: #A60C00;
+				border-bottom: 6px solid #A60C00;
+			}
+			padding-left: 36px;
+		}
+		li.right {
+			float: right;
+			padding-left:28px;
+		}
+		li.bullet {
+			background: transparent url(../img/menu-bullet.png) no-repeat;
+			background-position: 15px center;
+		}
+		li.bullet.right {
+			background-position: 10px center;
+		}
+		li.last {
+			//margin-right: 36px;
+			margin-right: 28px;
+		}
+	}
+}
+
+#klement {
+	font-family: 'Miss Fajardose', cursive;
+	//font-family: 'Great Vibes', cursive;
+	//font-family: 'Ruthie', cursive;
+	font-size: 125px;
+	display: block;
+	text-align: center;
+	color: #45170d;
+	color: #A60C00;
+	line-height: 200px;
+	margin-top: 150px;
+	margin-left: -25px;
+	text-shadow: 0px 3px 0px #888;
+}
+#klement:hover {
+	text-decoration: none;
+}
+
+.andelicci {
+	width: 690px;
+	display: block;
+	margin: 0 auto;
+}
+.ozdobrana {
+	width: @siteWidth;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	top: 55px;
+}
+
+#header-logo {
+	//background-image: url(../img/andelicci.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 555px;
+	height: 386px;
+	display: block;
+	position: absolute;
+	text-indent: -9000px;
+	margin: 0 322px;
+	z-index: 100;
+}
+
+#header-search {
+	.size(37px, 340px);
+	float: left;
+	margin-top: 120px;
+	margin-left: 27px;
+	input[type="text"] {
+		width: 209px;
+		height: 37px;
+		margin: 0;
+		padding: 0 12px;
+		background: transparent url(../img/search-bg.png) no-repeat;
+		.border-radius(9px);
+	}
+}
+
+#social-icons {
+	.size(33px, 170px);
+	float: right;
+	margin-top: 120px;
+	margin-right: 19px;
+	position: relative;
+	> a {
+		display: block;
+		float: left;
+		width: 32px;
+		height:33px;
+		background: transparent url(../img/social-icons.png) no-repeat;
+		text-indent: -9000px;
+		margin-left: 10px;
+	}
+	> .tw   { background-position:  -41px }
+	> .rss  { background-position:  -81px }
+	> .mail { background-position: -121px }
+}
+
+.hp-image {
+	display: block;
+	height: 417px;
+	background: transparent url(../img/hp-image-2.gif) no-repeat;
+}
+
+.submenu.hp-image {
+	height: 417px;
+}
+
+.submenu {
+	height: 100px;
+	h1 {
+		font-family: 'PoliticARegular';
+		font-size: 40px;
+		line-height: 100px;
+		color: #00114d;
+		padding-left: 135px;
+	}
+	h1.program {
+		background-image: url(../img/icon-program-small.png);
+		background-repeat: no-repeat;
+		background-position: 15px center;
+	}
+	h1.galerie {
+		background-image: url(../img/icon-galerie-small.png);
+		background-repeat: no-repeat;
+		background-position: 15px center;
+	}
+	h1.quiki {
+		color: red;
+		padding-left: 0px;
+	}
+	ul {
+		float: right;
+		width: 340px;
+		list-style-type: none;
+		font-family: 'PoliticARegular';
+		color: #00114d;
+		font-size: 22px;
+		a, a:visited {
+			text-decoration: none;
+			color: #00114d;
+		}
+		a:hover {
+			color: #AF2330;
+		}
+		.current {
+			a, a:visited {
+				color: #aaa;
+			}
+		}
+	}
+	li {
+		float: right;
+		padding-left: 14px;
+		padding-top: 75px;
+		background-image: url(../img/icon-small-bg.png);
+		background-repeat: no-repeat;
+		background-position: 18px 8px;
+	}
+	li.program { background-position: -315px 8px; }
+	li.galerie { background-position: -157px 8px; }
+	li.historie{ background-position: -236px 8px; }
+	li.program.current { background-position: -63px 8px; }
+	li.galerie.current { background-position: -157px 8px; }
+	li.historie.current{ background-position: -236px 8px; }
+	
+	a {
+		padding-top: 75px;
+		background-image: url(../img/icon-small-fg.png);
+		background-repeat: no-repeat;
+		background-position: 4px 12px;
+	}
+	.program a { background-position: -77px 12px; }
+	.galerie a { background-position: -171px 12px; }
+	.historie a { background-position: -249px 12px; }
+}

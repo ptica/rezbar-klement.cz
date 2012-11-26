@@ -1,0 +1,40 @@
+html {
+	background-color: #c0c0c0;
+}
+
+body {
+	position: relative;
+	color: @grayDark;
+	background-color: #111;
+	margin: 0;
+	#font > .sans-serif(normal,@basefont,@baseline);
+}
+
+// Container (centered, fixed-width layouts)
+.container {
+  .fixed-container();
+  position: relative;
+  z-index: 3;
+  padding: 0 31px;
+}
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  position: relative;
+  min-width: 1204px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .clearfix();
+  // TODO in v2: rename this and .popover .content to be more specific
+  > .content {
+    margin-left: 240px;
+  }
+}
+
+.container, .container-fluid {
+	background: gray url(../img/container-bg.png) repeat;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow:
+		inset  0px -50px 225px -100px #9E8D11,
+		inset  0px 70px 225px -100px #9E8D11;
+}

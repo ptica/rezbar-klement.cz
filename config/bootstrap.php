@@ -53,3 +53,6 @@ App::build(array(
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+
+
+Configure::write('site.mode', 'test');

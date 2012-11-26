@@ -1,0 +1,132 @@
+@x: 600px;
+@y: 700px;
+@z: 140px;
+@w: 18px;
+
+
+.kiosk {
+	-webkit-perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective-origin: 50% 0%;
+	position: relative;
+	width:  @x;
+	height: @y;
+	-webkit-transition: -webkit-transform 2s;
+	//-webkit-transform: translateZ(-@z);
+}
+
+.kiosk figure {
+	display: block;
+	position: absolute;
+	margin:0;
+	border: 0px solid gray;
+	background: url(wood-saturated-by-yc.jpg) no-repeat;
+}
+
+// sizing
+.kiosk .o-back {
+	width:  @x;
+	height: @y;
+}
+.kiosk .o-left, .kiosk .o-right {
+	width: @z;
+	left:  (@x - (@z))/2;
+	height: @y;
+}
+.kiosk .o-top, .kiosk .o-bottom {
+	width:  @x;
+	height: @z;
+	top:  (@y - @z)/2;
+}
+
+.kiosk .i-back {
+	width:  @x - 2*@w;
+	height: @y - 2*@w;
+	left: @w;
+	top: @w;
+}
+.kiosk .i-left, .kiosk .i-right {
+	width: @z - @w;
+	left:  (@x - (@z - @w))/2;
+	top: @w;
+	height: @y - 2*@w;
+}
+.kiosk .i-right { background-position: (-@x + 1*@w) 0 }
+.kiosk .i-top, .kiosk .i-bottom {
+	width:  @x - 2*@w;
+	height: @z - @w;
+	top:  (@y - (@z - @w))/2;
+	left: @w;
+}
+
+.kiosk .f-left, .kiosk .f-right {
+	width: @w;
+	height: @y;
+}
+.kiosk .f-right {
+	right: 0;
+	background-position: (-@x + @w) 0;
+}
+.kiosk .f-top, .kiosk .f-bottom {
+	width: @x;
+	height: @w;
+}
+.kiosk .f-bottom {
+	bottom: 0;
+	background-position: 0 (-@y + @w);
+}
+
+.kiosk .shelf figure {
+	background: url(wood-saturated-by-yc-rotated.jpg) no-repeat;
+	background-position: -@x -@y;
+}
+.kiosk .shelf .top, .kiosk .shelf .bottom, .kiosk .shelf .front {
+	width: @x - 2*@w;
+	height: @z;
+	top: @x/2 - @z/2;
+	left: @w;
+}
+.kiosk .shelf .front {
+	height: @w;
+	top: @x/2 - @w/2;
+}
+
+
+// 3d positions
+.kiosk .o-back  { -webkit-transform: rotateY(0deg)   translateZ((-@z)/2); }
+.kiosk .o-left  { -webkit-transform: rotateY(-90deg) translateZ(@x/2); }
+.kiosk .o-right { -webkit-transform: rotateY(90deg)  translateZ(@x/2); }
+.kiosk .o-top   { -webkit-transform: rotateX(90deg)  translateZ(@y/2); }
+.kiosk .o-bottom{ -webkit-transform: rotateX(-90deg) translateZ(@y/2); }
+
+.kiosk .i-back  { -webkit-transform: rotateY(0deg)   translateZ((-@z+@w)/2); }
+.kiosk .i-left  { -webkit-transform: rotateY(-90deg) translateZ((@x - 2*@w)/2); }
+.kiosk .i-right { -webkit-transform: rotateY(90deg)  translateZ((@x - 2*@w)/2); }
+.kiosk .i-top   { -webkit-transform: rotateX(90deg)  translateZ((@y - 2*@w)/2); }
+.kiosk .i-bottom{ -webkit-transform: rotateX(-90deg)  translateZ((@y - 2*@w)/2); }
+.kiosk .f-left, .kiosk .f-right, .kiosk .f-top, .kiosk .f-bottom  { -webkit-transform: translateZ((@z - @w)/2); }
+.kiosk .shelf .front  { -webkit-transform: rotateX(0deg) translateZ((@z - @w)/2) }
+.kiosk .shelf .top    { -webkit-transform: rotateX(90deg) translateZ(@w/2) }
+.kiosk .shelf .bottom { -webkit-transform: rotateX(-90deg) translateZ(@w/2) }
+.kiosk .shelf.bottom .front  { -webkit-transform: rotateX(0deg) translateZ((@z - @w)/2) translateY(@y/3) }
+.kiosk .shelf.bottom .top    { -webkit-transform: rotateX(90deg) translateZ(@w/2) translateZ(-@y/3)}
+.kiosk .shelf.bottom .bottom { -webkit-transform: rotateX(-90deg) translateZ(@w/2) translateZ(@y/3) }
+
+.kiosk .shelf.top .front  { -webkit-transform: rotateX(0deg) translateZ((@z - @w)/2) translateY(-@y/4) }
+.kiosk .shelf.top .top    { -webkit-transform: rotateX(90deg) translateZ(@w/2) translateZ(@y/4)}
+.kiosk .shelf.top .bottom { -webkit-transform: rotateX(-90deg) translateZ(@w/2) translateZ(-@y/4) }
+
+.kiosk .w {
+	background: url(wood-saturated-by-yc.jpg) no-repeat;
+}
+
+.kiosk .headboard {
+	height:40px;
+	width: 100%;
+	background: url(wood-saturated-by-yc-rotated.jpg) no-repeat;
+}
+
+#kiosk.flipped {
+	-webkit-transform: rotateY(-180deg);
+	-webkit-perspective: -1000px;
+}
