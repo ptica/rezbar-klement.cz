@@ -95,13 +95,13 @@
 				<li class=""><a href="kontakt">KONTAKT</a></li>
 			</ul>
 		</nav>
-		<?php echo $this->Html->image('../css/img/ozdobrana.png', array('class'=>'ozdobrana')) ?>
-		<a id="klement" href="<?php echo Router::url('/')?>">Řezbář Klement</a>
 		<!--form id="header-search" action="/search" method="get">
 				<span>Hledat:</span>
 				<input type="text" name="q" />
 		</form-->
 	</header>
+	
+	<h1 id="klement" href="<?php echo Router::url('/')?>">Řezbář Klement</h1>
 	
 	<footer class="intro">
 		<!--img src="/css/img/gregor-dum.jpg" width="745px" height="130%" style="overflow:hidden"-->
