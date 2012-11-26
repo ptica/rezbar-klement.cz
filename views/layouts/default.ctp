@@ -14,7 +14,7 @@
 	
 	<title><?php echo $title_for_layout; ?></title>
 	<meta name="description" content="Řezbář ">
-	<meta name="author" content="Jan Ptáček">
+	<meta name="author" content="Jan Ptáček jan.ptacek@gmail.com">
 	<meta http-equiv="Content-language" content="cs">
 	<meta name="keywords" content="řezba Klement">
 	<meta name="robots" content="all, follow">
@@ -91,7 +91,7 @@
 				<li class=""><a href="odkazy">ODKAZY</a></li>
 				<li class=""><a href="ohlasy">OHLASY</a></li>
 				<li class=""><a href="nastroje">NÁSTROJE</a></li>
-				<li class=""><a href="partneri">REALIZACE</a></li>
+				<li class=""><a href="galerie">GALERIE</a></li>
 				<li class=""><a href="kontakt">KONTAKT</a></li>
 			</ul>
 		</nav>
@@ -127,8 +127,8 @@
 		<nav>
 			<ul>
 				<li><a class="current" href="/">Vítejte</a></li>
-				<li><a href="program">Program</a></li>
 				<li><a href="novinky">Novinky</a></li>
+				<li><a href="kurzy">Kurzy</a></li>
 				<li><a href="galerie">Galerie</a></li>
 				<li><a href="historie">Historie</a></li>
 				<li><a href="odkazy">Odkazy</a></li>
