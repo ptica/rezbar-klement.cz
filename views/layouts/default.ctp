@@ -101,26 +101,11 @@
 		</form-->
 	</header>
 	
-	<h1 id="klement" href="<?php echo Router::url('/')?>">Řezbář Klement</h1>
-	
-	<footer class="intro">
-		<!--img src="/css/img/gregor-dum.jpg" width="745px" height="130%" style="overflow:hidden"-->
-	</footer>
-	
-	<div style="margin-left:32px; float: left; width:350px; margin-bottom:52px;">
-	Hola hola hola hej
-	</div>
-	<div style="margin-left:32px; float: left; width:350px">
-	Hola hola hola hej
-	</div>
-	
-	<?php echo $this->Html->image('../css/img/andelicci.png', array('class'=>'andelicci')) ?>
-	
-	
-	
 	<div class="content">
 		<?php echo $content_for_layout."\n" ?>
 	</div>
+	
+	<?php echo $this->Html->image('../css/img/andelicci.png', array('class'=>'andelicci')) ?>
 	
 	<footer class="subfooter noprint">
 		<span class="divider-h"></span>
