@@ -1,0 +1,3 @@
+* have edited the font using fontforge on windows
+* save it as TTF in fontforge
+* use font squirel webservice to generate compressed woff

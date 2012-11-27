@@ -12,7 +12,7 @@
 	<?php echo $this->Html->charset() . "\n"; ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title><?php echo $title_for_layout; ?></title>
+	<title><?php echo $title_for_layout; ?> &ndash; řezbář Milan Klement</title>
 	<meta name="description" content="Řezbář ">
 	<meta name="author" content="Jan Ptáček jan.ptacek@gmail.com">
 	<meta http-equiv="Content-language" content="cs">
@@ -84,22 +84,7 @@
 <div class="container">
 	<?php echo $this->Session->flash() ?>
 	
-	<header id="header" class="noprint">
-		<nav class="menu">
-			<ul>
-				<li><a href="/">HOME</a></li>
-				<li class=""><a href="odkazy">ODKAZY</a></li>
-				<li class=""><a href="ohlasy">OHLASY</a></li>
-				<li class=""><a href="nastroje">NÁSTROJE</a></li>
-				<li class=""><a href="galerie">GALERIE</a></li>
-				<li class=""><a href="kontakt">KONTAKT</a></li>
-			</ul>
-		</nav>
-		<!--form id="header-search" action="/search" method="get">
-				<span>Hledat:</span>
-				<input type="text" name="q" />
-		</form-->
-	</header>
+	<?php echo $this->element('top-menu') ?>
 	
 	<div class="content">
 		<?php echo $content_for_layout."\n" ?>
@@ -119,7 +104,6 @@
 				<li><a href="odkazy">Odkazy</a></li>
 				<li><a href="ohlasy">Ohlasy</a></li>
 				<li><a href="kontakt">Kontakt</a></li>
-				<li class="right to-top"><a href="#top"></a></li>
 			</ul>
 		</nav>
 		
@@ -127,18 +111,12 @@
 	</footer>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<!--script src='<?php echo Router::url('/js/libs/jquery-1.5.1.min.js') ?>'></script-->
-
-<!--[if lt IE 7 ]>
-	<script src="js/libs/dd_belatedpng.js"></script>
-	<script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-<![endif]-->
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script-->
+<script src='<?php echo Router::url('/js/libs/jquery-1.5.1.min.js') ?>'></script>
 
 <?php
 	echo $this->Html->script(
 		array(
-			"rezbar-klement.js?$ver",
 		),
 		array('once'=>true)
 	);
