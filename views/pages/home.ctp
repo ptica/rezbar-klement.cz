@@ -7,14 +7,17 @@
 </footer>
 
 <div class="hero">
-Do kapličky patří madona a světec, kterému je zasvěcena. <a href="cirkevni">Nová nebo šetrně zrestaurovaná</a>. 
+Výzdoba kostelů a kaplí, bez nichž by česká krajina ztratila kus své poezie. <a href="kostely">Dřevěné sochy světců vyrábíme a také
+	restaurujeme</a>. 
 </div>
 
 <div class="hero">
-Česká architektura je tradičně zdobná; prohlédněte si <a href="domovni">vyřezávané štíty domů a reliéfy</a>.
+Vyrábíme nábytek a restaurujeme staré kusy. Váš dům může ozdobit <a href="domy">vyřezávaný reliéf,
+	dřevěná socha</a> se stane přirozenou součástí vaší zahrady.
 </div>
 
 <div class="hero last">
-Tradiční <a href="myslivecke">štítky pod trofeje a vyřezáváné lože</a> pro zbraně patří k myslivosti.
+Myslivcům, právem hrdým na své úlovky, nabízíme pod jejich trofeje či preparace <a href="">štítky z
+	lipového dřeva, i&nbsp;podle vlastních vzorů</a>.
 </div>
 

@@ -27,15 +27,24 @@
 				border-bottom: 4px solid transparent;
 				-webkit-transition-property: color, border;
 				-webkit-transition-duration: 100ms, 100ms;
+				text-transform: uppercase;
 			}
-			a:hover, a:active {
+			a:hover, a:active, a.current {
 				color: #A60C00;
 				border-bottom: 4px solid #A60C00;
 				-webkit-transition-property: color, border;
 				-webkit-transition-duration: 300ms, 600ms;
 			}
+			a.logo-small {
+				//text-indent: -99999px;
+				//background: url('../img/logo-small.png') no-repeat;
+				display: block;
+				width: 135px;
+				line-height: 31px;
+			}
 			padding-left: 36px;
 		}
+		li.logo-small { padding-left: 0px; }
 		li.right {
 			float: right;
 			padding-left:28px;
