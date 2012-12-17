@@ -1,0 +1,52 @@
+/* Picasa Web - #picasa DIV.item MUST BE FIRST!!! accesseb as rules[0] by JavaScript!!! */
+#picasa DIV.item {
+  /*background: url(/pic/galItemBg.gif) no-repeat top left;*/
+  width:180px; height:250px; 
+  float:left; 
+  margin:1px; 
+  overflow:hidden; 
+  text-align:left;
+  vertical-align:top;
+  color:#666;
+  font-size:85%;
+  zoom:80%;
+}
+
+DIV#gallery          {float:left; text-align:justify;} 
+DIV#galleryTree      {float:left; margin-right:30px}
+#gallery IMG         {margin: 3px 4px 18px 4px}
+#gallery DIV.caption {font-size:8px; text-align:center; margin-right:2em;}
+#gallery DIV.item    {float:left}
+#gallery IMG.ico     {border:none; margin:3px}
+#gallery IMG.docIco  {border:none; margin:4px 10px 0 0; vertical-align:middle}
+DIV#sums             {margin-top:20px;}
+
+P:first-letter       {padding:0; font-size:100%;}
+#picasa DIV.item P   {margin:0 10px 0 10px; text-align:left;} 
+#picasa DIV.item P B {font-size:120%} 
+#picasa DIV.item A   {text-decoration:none; color:#789;}
+#picasa A            {text-decoration:none; font-weight:bold; color:#345;}
+#picasa DIV.item A   {text-decoration:none; color:#678;}
+#picasa DIV.item IMG {width:160px; height:160px; display:block; border:none; margin:10px;}
+
+/* slider style */
+#zoomSlider {position:absolute; top:34px; right:250px; text-align:center;}
+#slider {
+   width:100px; height:20px; 
+   overflow:scroll; 
+   overflow-y:hidden;
+   scrollbar-face-color: #ddeeff;
+   scrollbar-shadow-color: #667788;
+   scrollbar-highlight-color: #ffffff;
+   scrollbar-3dlight-color: #ddeeff;
+   scrollbar-darkshadow-color: #667788;
+   scrollbar-track-color: #ccddee;
+   scrollbar-arrow-color: black;
+   border:1px solid #8899aa;
+   zoom:85%;
+   margin:3px;
+ }
+ #sliderIn  {width:1100px; height:1px;}
+ #sliderLbl {font-size:80%; color:#8899aa;}
+
+
