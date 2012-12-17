@@ -86,14 +86,14 @@
 	
 	<?php echo $this->element('top-menu') ?>
 	
-	<div class="content">
-		<?php echo $content_for_layout."\n" ?>
-	</div>
+	<?php
+		$uri = $this->params['url']['url'];
+		echo $this->Html->div("content main $uri", $content_for_layout);
+	?>
 	
 	<?php echo $this->Html->image('../css/img/andelicci.png', array('class'=>'andelicci')) ?>
 	
 	<footer class="subfooter noprint">
-		<span class="divider-h"></span>
 		<nav>
 			<ul>
 				<li><a class="current" href="/">Vítejte</a></li>
@@ -107,7 +107,7 @@
 			</ul>
 		</nav>
 		
-		<div class="copyright">&copy; 2012 řezbář Milan Klement</div>
+		<div class="copyright">&copy; 2012 řezbář Milan Klement &ndash; tel. 317 853 413</div>
 	</footer>
 </div>
 

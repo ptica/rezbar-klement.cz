@@ -1,3 +1,0 @@
-[submodule "plugins/deploy"]
-	path = plugins/deploy
-	url = git@github.com:ptica/deploy-cake.git 

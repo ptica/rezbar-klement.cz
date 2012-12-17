@@ -247,6 +247,10 @@
  */
 	//date_default_timezone_set('UTC');
 date_default_timezone_set('Europe/Prague');
+setlocale(LC_ALL,     'cs_CZ.UTF-8');
+setlocale(LC_NUMERIC, 'en_US.UTF-8');  // keep the numeric dot in floats!
+mb_internal_encoding('UTF-8');
+
 
 /**
  *

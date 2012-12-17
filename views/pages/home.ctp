@@ -17,7 +17,7 @@ Vyrábíme nábytek a restaurujeme staré kusy. Váš dům může ozdobit <a hre
 </div>
 
 <div class="hero last">
-Myslivcům, právem hrdým na své úlovky, nabízíme pod jejich trofeje či preparace <a href="">štítky z
+Myslivcům, právem hrdým na své úlovky, nabízíme pod jejich trofeje či preparace <a href="stitky">štítky z
 	lipového dřeva, i&nbsp;podle vlastních vzorů</a>.
 </div>
 
