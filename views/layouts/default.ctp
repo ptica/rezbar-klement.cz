@@ -18,6 +18,7 @@
 	<meta http-equiv="Content-language" content="cs">
 	<meta name="keywords" content="řezba Klement">
 	<meta name="robots" content="all, follow">
+	<meta name="google-site-verification" content="NaiKBFZz3_ZOnl7gRjH1QAD8dytIrr6DpukS77BSogA">
 	
 	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->	
 	<?php echo $this->Html->meta('icon') ?>
